@@ -5,7 +5,6 @@ import Modelo.BD_observador;
 import Modelo.observador;
 
 public class controlador_observador {
-
     vista_observador vis = new vista_observador();
     BD_observador BD = new BD_observador();
 
@@ -29,6 +28,7 @@ public class controlador_observador {
                     BD.mostrar();
                     break;
                 case 3:
+                    vis.salida();
                     continuar = false;
                     break;
                 default:

@@ -3,10 +3,7 @@ package Controlador;
 import Modelo.BD_profesores;
 import Modelo.BaseDatosEstudiante;
 import Modelo.Profesor;
-import Vista.LoginEstudiante;
-import Vista.VistaEstudiante;
-import Vista.vista_inicial;
-import Vista.vista_profesor;
+import Vista.*;
 
 public class controlador_inicial {
     vista_profesor vista_profesor = new vista_profesor();
@@ -15,6 +12,7 @@ public class controlador_inicial {
     VistaEstudiante vistaEstudiante = new VistaEstudiante();
     LoginEstudiante loginEstudiante = new LoginEstudiante();
     BaseDatosEstudiante baseDatosEstudiante = new BaseDatosEstudiante();
+    vista_observador vista_obse = new vista_observador();
     int opciones=0;
     boolean continuar = true;
 
@@ -39,6 +37,9 @@ public class controlador_inicial {
                     vista_profesor.conectar();
                     break;
                 case 3:
+                    vista_obse.conectar();
+                    break;
+                case 4:
                     vista_profesor.salida();
                     continuar=false;
                     break;

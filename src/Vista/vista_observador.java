@@ -57,5 +57,9 @@ public class vista_observador {
         con.control();
     }
 
+    public void salida(){
+        String mostrar="Gracias por usar nuestro sistema todo quedara subido en un archivo json, Hasta Pronto :D";
+        JOptionPane.showMessageDialog(null,mostrar);
+    }
 
 }
