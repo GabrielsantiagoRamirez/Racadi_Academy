@@ -1,1 +1,1 @@
-# Racadi_Academy
+# RacadiAcademi
